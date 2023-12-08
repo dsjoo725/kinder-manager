@@ -41,7 +41,6 @@ export const updateAttendance = async (
         att: attendanceStatus,
       },
     });
-    console.log(updatedStudent);
     return updatedStudent;
   } catch (error) {
     throw error;
