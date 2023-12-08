@@ -10,7 +10,6 @@ async function OrderPage() {
     <main>
       <Link href={"/"}>뒤로가기</Link>
       <h1>순서 뽑기</h1>
-      <h2>차례차례 질서를 지켜요😍</h2>
       <OrderPicker students={students} />
     </main>
   );
