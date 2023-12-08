@@ -4,6 +4,8 @@ import { getStudents } from "@/services/student";
 import StudentList from "@/components/StudentList";
 import Link from "next/link";
 
+export const revalidate = 0;
+
 async function AttendancePage() {
   const students = await getStudents();
   return (

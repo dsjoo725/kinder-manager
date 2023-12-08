@@ -4,6 +4,8 @@ import React from "react";
 import OrderPicker from "@/components/OrderPicker";
 import { getAttendingStudents } from "@/services/student";
 
+export const revalidate = 0;
+
 async function OrderPage() {
   const students = await getAttendingStudents();
   return (
