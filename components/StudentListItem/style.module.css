@@ -1,0 +1,19 @@
+.student_list_item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 4px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.circle[data-att="true"] {
+  background-color: var(--color-green);
+}
+.circle[data-att="false"] {
+  background-color: var(--color-red);
+}

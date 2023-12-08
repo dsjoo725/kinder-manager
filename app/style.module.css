@@ -1,0 +1,26 @@
+.layout {
+  margin: 48px 80px;
+}
+
+.logo {
+  font-family: YClover;
+}
+.logo_green {
+  color: var(--color-green);
+}
+.logo_blue {
+  color: var(--color-blue);
+}
+.logo_yellow {
+  color: var(--color-yellow);
+}
+.logo_red {
+  color: var(--color-red);
+}
+
+.navbar {
+  list-style-type: none;
+  display: flex;
+
+  gap: 20px;
+}
