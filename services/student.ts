@@ -1,5 +1,6 @@
 "use server";
 import prisma from "@/prisma";
+import { revalidatePath } from "next/cache";
 
 export const getStudents = async () => {
   try {
@@ -41,6 +42,7 @@ export const updateAttendance = async (
         att: attendanceStatus,
       },
     });
+    revalidatePath("/att");
     return updatedStudent;
   } catch (error) {
     throw error;

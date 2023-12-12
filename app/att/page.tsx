@@ -4,10 +4,9 @@ import { getStudents } from "@/services/student";
 import AttendanceList from "@/components/AttendanceList";
 import Link from "next/link";
 
-export const revalidate = 0;
-
 async function AttendancePage() {
   const students = await getStudents();
+
   return (
     <main>
       <Link href={"/"}>뒤로가기</Link>

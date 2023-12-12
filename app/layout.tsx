@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
+
+import style from "./style.module.css";
 
 import "@/styles/global.css";
 
-import style from "./style.module.css";
+const Pretendard = localFont({
+  src: "../public/woff2/PretendardVariable.woff2",
+});
 
 export const metadata: Metadata = {
   title: "Kinder Manager",
@@ -15,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko">
+    <html lang="ko" className={Pretendard.className}>
       <body>
         <div className={style.layout}>{children}</div>
       </body>

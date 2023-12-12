@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Student } from "@prisma/client";
 import { updateAttendance } from "@/services/student";
 
