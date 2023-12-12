@@ -7,6 +7,7 @@ import "@/styles/global.css";
 
 const Pretendard = localFont({
   src: "../public/woff2/PretendardVariable.woff2",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
