@@ -20,6 +20,9 @@ function Home() {
           <li>
             <Link href={"/order"}>순서뽑기</Link>
           </li>
+          <li>
+            <Link href={"/student"}>학생관리</Link>
+          </li>
         </ul>
       </nav>
     </main>
