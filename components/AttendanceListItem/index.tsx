@@ -17,13 +17,15 @@ function AttendanceListItem({ student }: Props) {
     try {
       setPending(true);
       const updateStudent = await updateAttendance(student.id, toggledAtt);
-      setStudentView(updateStudent);
     } catch (error) {
       console.error(error);
-    } finally {
-      setPending(false);
     }
   };
+
+  useEffect(() => {
+    setStudentView(student);
+    setPending(false);
+  }, [student]);
 
   return (
     <li className={style.attendance_list_item}>
